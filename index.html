@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DisHook Client By PancakeBoiii</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel='icon' href='\favicon.ico' type='image/x-icon'/ >
+  </head>
+  <body>
+	<div class="content">
+		<div class="profilecard">
+			<div class="me">
+				<div class="avatar">
+					<img src="https://discord.com/assets/6debd47ed13483642cf09e832ed0bc1b.png" id="image" />
+				</div>
+						<div class="message">
+				<input type="text" id="username" placeholder="Username" autofocus />
+			</div>
+			</div>
+			<div class="message">
+				<input type="url" id="url" placeholder="Webhook URL" autofocus />
+			</div>
+			<div class="message">
+				<input type="url" id="avatar" placeholder="Avatar URL" autofocus />
+			</div>
+			<div class="message">
+				<textarea name="message" id="content" cols="30" rows="5" placeholder="Message" autofocus></textarea>
+			</div>
+			    <button class="white-button" id="updatepfp">Update Profile Picture</button>
+				</br>
+			    <button class="blue-button" id="send">Send</button>
+				</br>
+		</div>
+	</div>
+</body />
+<script>
+document.getElementById("updatepfp").addEventListener("click", e => {
+  let imageInput = document.getElementById("avatar");
+  let image = document.getElementById("image");
+  if (imageInput.value) image.src = imageInput.value;
+});
+</script>
+  <script>
+
+var avatarurl = document.querySelector("#avatar");
+var btn = document.querySelector("#send");
+var username = document.querySelector("#username");
+var whurl = document.querySelector("#url");
+var content = document.querySelector("#content");
+
+btn.onclick = function() {
+  var request = new XMLHttpRequest();
+  var url = whurl.value;
+  var usernameString = username.value;
+  var whurlString = whurl.value;
+  var contentString = content.value;
+  var avatarString = avatarurl.value || "";
+  var params = "username="+usernameString+"&content="+contentString+"&avatar_url="+avatarString;
+
+  request.open('POST', url, true);
+
+  //Send the proper header information along with the request
+  request.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+
+  request.onreadystatechange = function() {//Call a function when the state changes.
+      if(request.readyState == 4 && request.status == 200) {
+          console.log(request.responseText);
+      }
+  }
+  request.send(params);
+  console.log("message Sent");
+}
+
+
+
+
+
+
+
+  </script>
+</html> 

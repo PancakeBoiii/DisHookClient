@@ -1,0 +1,264 @@
+@import url(http://db.onlinewebfonts.com/c/294afa63edf49dc293dd90373066b4d4?family=Whitney);
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+html {
+   min-height: 100%;
+   background-image: url(Back.png);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center center;
+}
+body{
+  -webkit-font-smoothing: antialiased !important;
+  max-width: 500px;
+  margin: auto;
+}
+body,
+input,
+button,
+textarea{
+  margin: auto;
+  font-family: "Whitney", sans-serif;
+}
+
+.content {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+	
+}
+.profilecard {
+	width: 250px;
+	margin: 30px auto 0 auto;
+	border-radius: 4px;
+	border: 1px solid #23262a;
+	background: #2f3136;
+	display: flex;
+	flex-direction: column;
+}
+
+.profilecard .me {
+	padding-top: 15px;
+	margin: 0 auto;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	background: #202225;
+	color: #fff;
+}
+
+.profilecard .me .avatar {
+	margin: 0 auto;
+	border-radius: 50%;
+	overflow: hidden;
+	width: 80px;
+	height: 80px;
+}
+.profilecard .me .avatar img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.profilecard .me .username {
+	margin: 15px auto 15px auto;
+	text-align: center;
+	font-weigth: 100;
+	font-size: 14px;
+}
+.profilecard .me .username strong {
+	color: #fff;
+}
+.profilecard .me .username span {
+	color: #72767d;
+	letter-spacing: -1px;
+}
+.profilecard .role, .profilecard .note .submenu {
+	padding: 0.5rem 0.5rem 2rem 0.5rem;
+	color: #72767d;
+	font-size: 10px;
+	display: flex;
+	flex-direction: column;
+}
+.profilecard .note .noteheader {
+	padding-bottom: 0.5rem; 
+}
+.profilecard .note textarea {
+	padding: 0.5rem;
+	resize: none;
+	background: transparent;
+	border: 0;
+	color: #72767d;
+	font-size: 10px;
+}
+.profilecard .note textarea:hover {
+	background: #202225;
+}
+.profilecard .message {
+padding: 0.5rem;
+border-top: 1px solid #23262a;
+}
+
+.profilecard .message input {
+	width: 100%;
+	border: 1px solid #23262a;
+	background: #36393f;
+	padding: 0.5rem;
+	color: hsla(0,0%,100%,.7);
+	font-size: 12px;
+}
+
+.profilecard .message textarea {
+	width: 100%;
+	border: 1px solid #23262a;
+	background: #36393f;
+	padding: 0.5rem;
+	color: hsla(0,0%,100%,.7);
+	font-size: 12px;
+}
+.profilecard .tip {
+	font-size: 10px;
+	padding: 0.2rem 0.5rem;
+}
+.profilecard .tip strong {
+	color: rgb(67, 181, 129);
+} 
+
+.profilecard .tip span {
+	color: #72767d;
+}
+html,
+textarea {
+  resize: none;
+}
+body {
+  background: #26262b;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  content-align: center;
+  line-height: 1.15;
+}
+
+.discord-logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 250px;
+}
+
+.wrapper-buttons {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 250px;
+}
+
+.wrapper-buttons > * {
+  margin-bottom: 10px;
+}
+
+.wrapper-buttons > *:first-child {
+  margin-top: 10px;
+}
+
+.wrapper-buttons > *:last-child {
+  margin-bottom: 0px;
+}
+
+.white-button,
+.blue-button {
+  display: inline-block;
+  font-family: Whitney, "Open Sans", Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 11pt;
+  border-radius: 3px;
+  cursor: pointer;
+  height: 45px;
+  width: 245px;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+}
+
+.blue-button {
+  background-color: #7289da;
+  border: 2px solid #7289da;
+  color: #fff;
+}
+
+.white-button {
+  background-color: #fff;
+  border: 2px solid #fff;
+  color: #000;
+}
+
+.wrapper-nitro-buttons {
+  margin: 0 auto !important;
+  width: 60%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: block;
+}
+
+.black-nitro-button,
+.green-nitro-button {
+  display: inline-block;
+  font-family: Whitney, "Open Sans", Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 11pt;
+  border-radius: 3px;
+  cursor: pointer;
+  height: 45px;
+  width: 200px;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+}
+
+.green-nitro-button {
+  background-color: #43b581;
+  border: 2px solid #43b581;
+  color: #fff;
+}
+
+.black-nitro-button {
+  background-color: #090909;
+  border: 2px solid #090909;
+  color: #fff;
+}
+
+.discount {
+  display: inline;
+  border: 1px solid hsla(0, 0%, 100%, 0.3);
+  color: hsla(0, 0%, 100%, 0.75);
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: 400;
+  margin-left: 3px;
+  padding: 3px;
+  width: 50px;
+}
+
+.blue-button:hover,
+.white-button:hover,
+.black-nitro-button:hover,
+.green-nitro-button:hover {
+  transform: translateY(1px);
+}
+
+.blue-button:active,
+.white-button:active,
+.black-nitro-button:active,
+.green-nitro-button:active {
+  transform: translateY(2px);
+}
+
+.blue-button,
+.white-button,
+.black-nitro-button,
+.green-nitro-button {
+  outline: transparent !important;
+}
